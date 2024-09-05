@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nosifer", sans-serif;
+}
+
+body{
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* button 1 */
+.btn1{
+    padding: 30px 70px;
+    font-size: 2rem;
+    /* font-weight: 600; */
+    word-spacing: 5px;
+    border: none;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,40,218,1) 0%, rgba(23,157,249,1) 59%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    box-shadow: 4px 5px 20px 5px rgb(129, 95, 250);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn1::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,79,232,1) 0%, rgba(58,249,23,1) 100%, rgba(255,0,44,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+
+
+.btn1:hover::before{
+    transform: translateY(0%);
+}
+
+.btn1:hover{
+    box-shadow: 4px 5px 20px 5px rgb(50, 148, 94);
+    color: white;
+}
+
+/* button 2 */
+.btn2{
+    margin-top: 100px;
+    padding: 30px 70px;
+    font-size: 2rem;
+    font-weight: 600;
+    word-spacing: 5px;
+    border: none;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,40,218,1) 0%, rgba(23,157,249,1) 59%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    box-shadow: 4px 5px 20px 5px rgb(129, 95, 250);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn2::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,79,232,1) 0%, rgba(58,249,23,1) 100%, rgba(255,0,44,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+
+
+.btn2:hover::before{
+    transform: translateY(0%);
+}
+
+.btn2:hover{
+    box-shadow: 4px 5px 20px 5px rgb(50, 148, 94);
+    color: white;
+}
